@@ -1,0 +1,47 @@
+
+    
+<h5>Installed agents by their status</h5>
+
+<div class="container-fluid mt-4"> 
+  
+        <div class="flex card-columns mx-auto d-flex  justify-content-between px-2 px-md-5 col-12">
+           
+          <div class="card shadow text-center col-2">
+            <div class="card-body flex-column">
+                <p class="card-title align-center text-muted">Total agents</p>
+                <p class="card-text colblue"><strong>{{this.AllAgents.length}}</strong></p>
+            </div>
+          </div>
+
+          <div class="card shadow text-center col-2">
+            <div class="card-body">
+                <p class="card-title align-center text-muted">Active agents</p>
+                <p class="card-text colgreen"><strong>{{this.active.length}}</strong></p>
+            </div>
+          </div>
+
+          
+          <div class="card shadow text-center col-2">
+            <div class="card-body">
+                <p class="card-title align-center text-muted">Disconnected agents</p>
+                <p class="card-text colred"><strong>{{this.disconnected.length}}</strong></p>
+            </div>
+          </div>
+
+          <div class="card shadow text-center col-2">
+            <div class="card-body">
+                <p class="card-title align-center text-muted">Pending agents</p>
+                <p class="card-text colgrey"><strong>{{this.pending.length}}</strong></p>
+            </div>
+          </div>
+
+          
+          <div class="card shadow text-center col-2">
+            <div class="card-body">
+                <p class="card-title align-center text-muted">Never connected agents</p>
+                <p class="card-text colgrey"><strong>{{this.neverConnected.length}}</strong></p>
+            </div>
+          </div>
+
+        </div>
+  </div>
